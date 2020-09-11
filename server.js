@@ -14,7 +14,6 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 var routes = require("./controllers/ burgers_controller");
-const bodyParser = require("body-parser");
 
 app.use(routes);
 

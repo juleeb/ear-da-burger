@@ -7,7 +7,12 @@
                 <h2>What Is Your Burger List</h2>
                     {{#each burgers}}
                     {{#unless this.devoured}}
-                        {{> burgers/burger-block}}
+                    <div class="not-devoured-burger">
+                        <form class="update-button">
+                        {{ this.burger_name }}
+                        <button type="submit" data-id={{this.id}} class="btn btn-default burger-ready">Devour the Burger</button>
+                        </form>
+                    </div>
                     {{/unless}}
                     {{/each}}
             </div>
@@ -15,7 +20,7 @@
                 <h2>Eatened Burger List</h2>
                     {{#each burgers}}
                     {{#if this.devoured}}
-                        {{> burgers/burger-block}}
+                        {{ this.burger_name }}
                     {{/if}}
                     {{/each}}
             </div>
