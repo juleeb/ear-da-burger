@@ -5,7 +5,7 @@ A burger logger application to type in bruger user wants to eat and click button
 
 Screenshot of the Application:
 
-<img src="assets/start.gif" width="600" height="300">
+<img src="screenshot.png" width="400" height="300">
 
 Description of the project:
 
@@ -15,12 +15,18 @@ Description of the project:
 
 -Node
     
-    -Express
-    -Handlebars
+    -express
+    -handlebars
+    -mysql
+    -body-parser
 
 -ORM
 
-Deployed link on Heroku:
+-MVC
+
+Deployed link on Heroku: 
+
+https://eat-da-burger-juleeb.herokuapp.com/
 
 
 
